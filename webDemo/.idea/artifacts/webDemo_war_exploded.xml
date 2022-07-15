@@ -1,0 +1,37 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="webDemo:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/webDemo_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="webDemo" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="lib" />
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.29" />
+          <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:3.19.4" />
+          <element id="library" level="project" name="Maven: com.alibaba:druid:1.1.10" />
+          <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.2.75" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="webDemo/web/Web" />
+      <element id="javaee-facet-resources" facet="webDemo/web/Web2" />
+      <element id="javaee-facet-resources" facet="webDemo/web/Web3" />
+      <element id="javaee-facet-resources" facet="webDemo/web/Web4" />
+      <element id="javaee-facet-resources" facet="webDemo/web/Web5" />
+      <element id="javaee-facet-resources" facet="webDemo/web/Web6" />
+      <element id="javaee-facet-resources" facet="webDemo/web/Web7" />
+      <element id="javaee-facet-resources" facet="webDemo/web/Web8" />
+      <element id="javaee-facet-resources" facet="webDemo/web/Web9" />
+      <element id="javaee-facet-resources" facet="webDemo/web/Web10" />
+      <element id="javaee-facet-resources" facet="webDemo/web/Web11" />
+      <element id="javaee-facet-resources" facet="webDemo/web/Web12" />
+      <element id="javaee-facet-resources" facet="webDemo/web/Web13" />
+      <element id="javaee-facet-resources" facet="webDemo/web/Web14" />
+      <element id="javaee-facet-resources" facet="webDemo/web/Web15" />
+      <element id="javaee-facet-resources" facet="webDemo/web/Web16" />
+      <element id="javaee-facet-resources" facet="webDemo/web/Web17" />
+      <element id="javaee-facet-resources" facet="webDemo/web/Web18" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,73 @@
+{
+  "code": 0,
+  "msg": "ok",
+  "data": [
+    {
+      "id": 1,
+      "name": "1",
+      "sex": "male",
+      "pid": -1
+    },
+    {
+      "id": 2,
+      "name": "2",
+      "sex": "male",
+      "pid": 1
+    },
+    {
+      "id": 3,
+      "name": "3",
+      "sex": "male",
+      "pid": 1
+    },
+    {
+      "id": 4,
+      "name": "4",
+      "sex": "male",
+      "pid": 1
+    },
+    {
+      "id": 5,
+      "name": "5",
+      "sex": "male",
+      "pid": -1
+    },
+    {
+      "id": 6,
+      "name": "6",
+      "sex": "male",
+      "pid": 5
+    },
+    {
+      "id": 7,
+      "name": "7",
+      "sex": "male",
+      "pid": 5
+    },
+    {
+      "id": 8,
+      "name": "8",
+      "sex": "male",
+      "pid": 6
+    },
+    {
+      "id": 9,
+      "name": "9",
+      "sex": "male",
+      "pid": 6
+    },
+    {
+      "id": 10,
+      "name": "10",
+      "sex": "male",
+      "pid": 9
+    },
+    {
+      "id": 11,
+      "name": "11",
+      "sex": "male",
+      "pid": 9
+    }
+  ],
+  "count": 11
+}

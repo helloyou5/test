@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="../layui/css/layui.css" media="all">
+		<script type="text/javascript" src="../layui/layui.js"></script>
+	</head>
+	<body>
+	<table class="layui-hide" lay-filter="test" id="test"></table>
+				
+	<script>
+	layui.use('table', function(){
+	var table = layui.table;
+	
+	table.render({
+		elem: '#test'
+		,url:'../../json/test.json'
+		,cols: [[
+		{type:'checkbox'}
+		,{field:'id', width:80, title: 'ID', sort: true}
+		,{field:'username', width:80, title: '用户名'}
+		,{field:'sex', width:80, title: '性别', sort: true}
+		,{field:'city', width:80, title: '城市'}
+		,{fixed: 'right', width:150, align:'center', toolbar: '#barDemo'}
+		]]
+		,page: true
+	});
+	
+	var table = layui.table;
+	table.on('tool(test)', function(obj){ //注：tool 是工具条事件名，test 是 table 原始容器的属性 lay-filter="对应的值"
+		var data = obj.data; //获得当前行数据
+		var layEvent = obj.event; //获得 lay-event 对应的值（也可以是表头的 event 参数对应的值）
+		var tr = obj.tr; //获得当前行 tr 的 DOM 对象（如果有的话）
+		console.log(data);
+		if(layEvent === 'detail'){ //查看
+			//do somehing
+		} else if(layEvent === 'del'){ //删除
+			layer.confirm('真的删除行么', function(index){
+			obj.del(); //删除对应行（tr）的DOM结构，并更新缓存
+			layer.close(index);
+			//向服务端发送删除指令
+			});
+		} else if(layEvent === 'edit'){ //编辑
+			//do something
+			layer.open({
+			type: 2, 
+			area: ['800px', '600px'],
+			content: 'editFood.html?#/id='+data.id //这里content是一个普通的String
+			});
+			//同步更新缓存对应的值
+			obj.update({
+			username: '123'
+			,title: 'xxx'
+			});
+		} else if(layEvent === 'LAYTABLE_TIPS'){
+			layer.alert('Hi，头部工具栏扩展的右侧图标。');
+		}
+	});
+	});
+	</script>
+	<script type="text/html" id="barDemo">
+	<a class="layui-btn layui-btn-xs" lay-event="detail">查看</a>
+	<a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+	<a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+	
+	<!-- 这里同样支持 laytpl 语法，如： -->
+	{{#  if(d.auth > 2){ }}
+		<a class="layui-btn layui-btn-xs" lay-event="check">审核</a>
+	{{#  } }}
+	</script>
+	</body>
+</html>

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="lib5">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/out/artifacts/webDemo_war_exploded/WEB-INF/classes/target/classes/web/WEB-INF/lib/jsp-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/out/artifacts/webDemo_war_exploded/WEB-INF/classes/target/classes/web/WEB-INF/lib/servlet-api.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

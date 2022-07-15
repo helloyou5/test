@@ -1,0 +1,49 @@
+{
+  "code": 0,
+  "msg": "ok",
+  "data": [
+    {
+      "d_id": 1,
+      "name": "level1",
+      "cname": "",
+      "d_pid": -1
+    },
+    {
+      "d_id": 0,
+      "name": "",
+      "cname": "音标",
+      "d_pid": 1
+    },
+    {
+      "d_id": 0,
+      "name": "",
+      "cname": "字母",
+      "d_pid": 1
+    },
+    {
+      "d_id": 4,
+      "name": "level2",
+      "cname": "",
+      "d_pid": -1
+    },
+    {
+      "d_id": 0,
+      "name": "",
+      "cname": "时间",
+      "d_pid": 4
+    },
+    {
+      "d_id": 0,
+      "name": "",
+      "cname": "打招呼",
+      "d_pid": 4
+    },
+    {
+      "d_id": 0,
+      "name": "",
+      "cname": "数字",
+      "d_pid": 4
+    }
+  ],
+  "count": 7
+}
